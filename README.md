@@ -20,6 +20,7 @@ red LED.
 2.)When the user pushes button D12, the AB will turn on the    
 green LED and begin sampling at a rate proportional to the 
 sliding potentiometer’s input value.
+
     a.)The sampling rates vary from 0.5Hz to 100Hz.
     b.)The potentiometer’s value is proportional to the    
     sampling interval.
@@ -27,6 +28,7 @@ sliding potentiometer’s input value.
         Large potentiometer value => low sampling rate.
         
 3.)Switch D2 determines which sensor to sample from:
+
     a.)When D2 is set to 0, the AB samples from the light sensor.
     b.)When D2 is set to 1, the AB samples from the microphone.
     
