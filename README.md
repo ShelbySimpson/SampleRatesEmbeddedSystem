@@ -1,11 +1,8 @@
 #SampleRatesEmbeddedSystems
 
 #Overview:
-This program was designed to work with an Arduino board
-and can easily be ported to other embedded systems. For example, 
-the Arduino board(AB) used in this project is specific to pins like D12,
-but within the program pins can be easily changed to be intergrated with
-other embedded system.
+This program was designed to work with an Arduino board(AB)
+and can easily be ported to other embedded systems.
 
 Data retrived from an onboard sliding potentiometer was
 used to determine the data sampling rate for an onboard

@@ -3,7 +3,8 @@
 
 LED::LED(short pin){
   if(pin < 4 || pin > 8){
-    Serial.println("Not a valid input for LED pin");
+    Serial.println("LEDs are pins 4-8 and 13");
+    Serial.print("Cannot set LED to pin ");
   }else{
   _pin = pin;
 }
