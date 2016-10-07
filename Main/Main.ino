@@ -7,10 +7,9 @@
 #include "LED.h"
 #include "Microphone.h"
 
-const int GREEN = 10;//color led
-const int RED = 9;//color led
-float hzValue;//hertz value
-float sampleRate;//store sample rate
+const int GREEN = 10;//color led input
+const int RED = 9;//color led input
+float sampleRate;
 boolean showSR13 = true;//is Sample light on
 
 ColorLED cLED = ColorLED(GREEN);//signifies sampling has started
@@ -63,7 +62,7 @@ void sample() {
 
       //Light up leds based on sensor mappings
         for(int i = hPin; i > 0; i--){
-          led.changePin(i+3);//add 3, LEDs start at 
+          led.changePin(i+3);//add 3, LEDs start at 4
           led.on();
           
         }
@@ -71,17 +70,8 @@ void sample() {
 }
 
 void setup()
-{
-  // Set INPUT OUTPUT
-  pinMode(4, OUTPUT);
-  pinMode(5, OUTPUT);
-  pinMode(6, OUTPUT);
-  pinMode(7, OUTPUT);
-  pinMode(8, OUTPUT);
-  pinMode(9, OUTPUT);
-  pinMode(10, OUTPUT);
-  
-  Serial.begin(57600);//init serial
+{ 
+    Serial.begin(57600);//init serial
 
     cLED.setPin(RED);//init set up of "sample on" light
     cLED.on();

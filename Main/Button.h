@@ -6,10 +6,10 @@ using namespace std;
 
 class Button{
   private:
-  int  _pin;//button pin for digital sandbox
+  int  _pin;//board pin
   public:
     Button();//Constructor sets _pin
-      int getData();//get data from pin D12
+    int getData();//get data from pin D12
 };
 
 

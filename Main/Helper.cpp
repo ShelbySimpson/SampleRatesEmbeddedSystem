@@ -3,8 +3,12 @@
 Helper::Helper(){};
 
 float Helper::getSampleRate(float slideValue){
+  if(slideValue < 0 || slideValue > 1023){
+    Serial.println("Invalid Input");
+  }else{
     hzValue = mapFloat(slideValue,0.0,1023.0,100.0,0.5);
     miliSec = (1/hzValue) * 1000;
+  }
     return miliSec;
 }
 

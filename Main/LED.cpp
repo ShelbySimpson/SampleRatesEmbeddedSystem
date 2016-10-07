@@ -7,6 +7,12 @@ LED::LED(short pin){
   }else{
   _pin = pin;
 }
+  // Set INPUT OUTPUT
+  pinMode(4, OUTPUT);
+  pinMode(5, OUTPUT);
+  pinMode(6, OUTPUT);
+  pinMode(7, OUTPUT);
+  pinMode(8, OUTPUT);
 }
 
 void LED::on(){
